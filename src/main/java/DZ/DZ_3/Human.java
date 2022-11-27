@@ -1,4 +1,4 @@
-package DZ.DZ_2;
+package DZ.DZ_3;
 
 public class Human {
     private final String name;
@@ -14,5 +14,13 @@ public class Human {
     @Override
     public String toString() {
         return this.name;
+    }
+
+    public int getBirthYear() {
+        return birthYear;
+    }
+
+    public String getInfo() {
+        return this.name + " " + this.birthYear + " " + this.sex;
     }
 }

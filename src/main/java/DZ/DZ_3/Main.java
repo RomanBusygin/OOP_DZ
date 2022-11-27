@@ -1,4 +1,4 @@
-package DZ.DZ_2;
+package DZ.DZ_3;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class Main {
 
         System.out.println(tree.request(john, Relationship.list.parent));
         System.out.println(tree.request(john, Relationship.list.grandparent));
-        System.out.println(tree.request(vova, Relationship.list.children));
+        System.out.println(tree.request(vova, Relationship.list.children).get(0).getInfo());
         System.out.println(tree.request(john, Relationship.list.children));
     }
 }
